@@ -1,0 +1,10 @@
+var input = prompt("What string would you like to copy?",
+                   "your string here")
+var number = prompt("And how many copies would you like?",
+                     "number of copies here")
+while(number<=0){
+  number = prompt("You can't have that number of copies, it's impossible! Try again",
+                 "number of copies here")
+}
+var result = input.repeat(number)
+console.log(result)
